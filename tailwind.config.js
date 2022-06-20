@@ -18,7 +18,8 @@ module.exports = {
         // Configure your color palette here
         // 'custom-green':'#66bb6a',
         'primary': '#2F1D18',
-        
+        'dark': ' #383838',
+
         'secondary': '#1751F0',
         'secondary-light': '#F5F4FF',
         'secondary-400': '#ECF1FE',
@@ -32,7 +33,6 @@ module.exports = {
         'lighter': '#F9F9F9',
         'light-300': '#F8F8F8',
         'light-medium': '#CCCCCC',
-        'dark': ' #0D0D0D',
         'dark-light': '#999999',
         'dark-lighter': '#666666',
         'dark-400': '#4B4949',

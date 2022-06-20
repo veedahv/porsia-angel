@@ -1,8 +1,8 @@
-.container {
+/* .container {
   padding: 0 2rem;
-}
+} */
 
-.main {
+/* .main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -106,11 +106,11 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
+} */
 
 @media (max-width: 600px) {
-  .grid {
+  /* .grid {
     width: 100%;
     flex-direction: column;
-  }
+  } */
 }
