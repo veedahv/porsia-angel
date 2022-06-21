@@ -98,24 +98,36 @@ export default function Home() {
         </div>
       </section>
       <section className=" bg-primary text-white relative">
-      <div className={styles.reviews + " bg-primary text-white relative"}>
+        <div className={styles.reviews + " bg-primary relative min-h-[300px] md:absolute w-full md:w-3/5 md:top-0 md:right-0 md:bottom-0"}>
+        </div>
+        <div className={styles.reviewGap + " hidden md:block bg-white md:absolute w-full md:w-1/5 md:top-0 md:left-1/2 transform md:-translate-x-1/2 md:bottom-0"}>
+  {/* width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); */}
+        </div>
+        {/* <div className={styles.reviews + " bg-primary text-white relative"}> */}
+        <div className=" bg-primary text-white relative">
           <div className="container px-4 py-5 mx-auto">
-              <div className="flex justify-start items-center min-h-[80vh]">
-                  <div className="max-w-lg w-1/2">
-                      <h1 className="text-3xl font-title my-5">
-                      LET THE NUMBERS SPEAK
-                      </h1>
-                      <p className="text-lg tracking-[1px] leading-loose my-5">
-                      Whether you are looking for a complete brand improvement, 
-                      a transformative space, a breath-taking comfort zone or simply wanting to show- off your imagination, 
-                      we will walk you through it step by step… maybe even with our eyes closed.
-                      </p>
-                      </div>
-                  </div>
+            <div className="flex justify-start items-center min-h-[80vh]">
+              <div className="max-w-lg w-full md:w-1/2">
+                <h1 className="text-3xl font-title my-5">
+                  LET THE NUMBERS SPEAK
+                </h1>
+                <p className="text-lg tracking-[1px] leading-loose my-5">
+                  Whether you are looking for a complete brand improvement,
+                  a transformative space, a breath-taking comfort zone or simply wanting to show- off your imagination,
+                  we will walk you through it step by step… maybe even with our eyes closed.
+                </p>
               </div>
+            </div>
           </div>
-          </section>
-      <section className="bg-[url('/assets/home-hero-bg.jpg')] bg-[#151515A1] bg-blend-overlay bg-cover bg-norepeat bg-center text-white w-full relative">
+        </div>
+      </section>
+      {/* <section className="bg-[url('/assets/home-hero-bg.jpg')] bg-[#151515A1] bg-blend-overlay bg-cover bg-norepeat bg-center text-white w-full relative">
         <div className="container mx-auto px-4 py-14">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl text-center font-title tracking-[2.5px] my-4">
@@ -136,7 +148,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Testimonial />
       <section className="">
         <div className="container mx-auto px-4 py-14">
