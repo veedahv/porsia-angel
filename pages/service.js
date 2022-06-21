@@ -18,7 +18,7 @@ export default function Service() {
           <div className="container px-4 py-5 mx-auto">
               <div className="flex justify-start items-center min-h-[80vh]">
                   <div className="max-w-lg">
-                      <h1 className="text-5xl my-5">
+                      <h1 className="text-7xl font-title my-5">
                       OUR SERVICES
                       </h1>
                       <p className="text-lg tracking-[1px] leading-loose my-5">
@@ -32,9 +32,9 @@ export default function Service() {
           </section>
           <section className="">
               <div className="container px-4 py-14 md:py-24 mx-auto">
-                  <div className="grid grid-cols-2 gap-14">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
                       <div className="">
-                          <h2 className="text-3xl tracking-[2.5px]">
+                          <h2 className="text-3xl font-title tracking-[2.5px]">
                           MATCH WITH A DESIGNER
                           </h2>
                           <p className="text-lg text-dark tracking-[1.5px] leading-loose">
@@ -42,7 +42,7 @@ export default function Service() {
                           </p>
                           </div>
                       <div className="">
-                          <h2 className="text-3xl tracking-[2.5px] uppercase">
+                          <h2 className="text-3xl font-title tracking-[2.5px] uppercase">
                           Work with comfort
                           </h2>
                           <p className="text-lg text-dark tracking-[1.5px] leading-loose">
@@ -50,7 +50,7 @@ export default function Service() {
                           </p>
                           </div>
                       <div className="">
-                          <h2 className="text-3xl tracking-[2.5px]">
+                          <h2 className="text-3xl font-title tracking-[2.5px]">
                               SHOP
                           </h2>
                           <p className="text-lg text-dark tracking-[1.5px] leading-loose">
@@ -59,7 +59,7 @@ export default function Service() {
                           </p>
                           </div>
                       <div className="">
-                          <h2 className="text-3xl tracking-[2.5px]">
+                          <h2 className="text-3xl font-title tracking-[2.5px]">
                               PRODUCTION
                           </h2>
                           <p className="text-lg text-dark tracking-[1.5px] leading-loose">

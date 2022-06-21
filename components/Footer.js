@@ -13,7 +13,7 @@ const Footer = () => {
                     <Image src="/assets/logo-light.svg" alt='Porsia and angel logo' width="478px" height="46px" className='' />
                 </div>
                 <div className="my-14 hidden md:flex gap-5">
-                    <a href="" className="border border-white px-3 py-5 text-lg tracking-[2.5px]">
+                    <a href="" className="border border-white w-56 px-1 py-5 text-lg text-center tracking-[2.5px]">
                         START A PROJECT
                         </a>
                 </div>

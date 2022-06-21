@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 // module.exports = {
 //   content: [],
 //   theme: {
@@ -40,6 +40,9 @@ module.exports = {
         /* --dark-medium: #555555, */
         'dark-medium': '#525252',
       },
+      fontFamily: {
+        'title': ['Nooa Semiserif', 'serif']
+      }
     },
   },
   plugins: [],

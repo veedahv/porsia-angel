@@ -16,7 +16,7 @@ export default function Contact() {
             <section className="">
                 <div className="container px-4 py-14 md:py-24 mx-auto">
                     <div className="max-w-3xl my-10 w-full">
-                        <h2 className="text-7xl text-primary font-normal tracking-[2.5px]">
+                        <h2 className="text-7xl text-primary font-title font-normal tracking-[2.5px]">
                             HIRE US
                         </h2>
                         <p className="text-2xl text-dark tracking-[1.5px] leading-loose">
@@ -28,7 +28,7 @@ export default function Contact() {
                         </p>
                     </div>
                     <div className="max-w-3xl my-10 w-full">
-                        <h2 className="text-7xl text-primary font-normal tracking-[2.5px]">
+                        <h2 className="text-7xl text-primary font-title font-normal tracking-[2.5px]">
                             GET HIRED
                         </h2>
                         <p className="text-2xl text-dark tracking-[1.5px] leading-loose">
