@@ -79,7 +79,7 @@ const Testimonial = () => {
                     {
                       allTestimonials.map((testimonial, i) => {
                         return (
-                          <div className="overflow-hidden absolute z-10 w-full h-full flex items-center justify-center flex-none" style={{ transform: `translateX(${(i - currentIndex) * 100}%)`, transition: 'all 0.5s' }}>
+                          <div className="overflow-hidden absolute z-10 w-full h-full flex items-center justify-center flex-none" style={{ transform: `translateX(${(i - currentIndex) * 100}%)`, transition: 'all 0.5s' }} key={i}>
                             <div className="font-normal md:text-lg text-sm leading-6 bg-no-repeat bg-cover bg-right-top w-full h-full">
                               <div className="flex items-stretch h-full">
                                 <div className="p-5 flex-auto">

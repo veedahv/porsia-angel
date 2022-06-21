@@ -92,7 +92,7 @@ export default function Home() {
               </button>
             </div>
             <div className="flex-auto w-full lg:w-7/12">
-              <Image src="/assets/home-step-img.jpg" width="610px" height="714px" className='mx-auto w-full' />
+              <Image src="/assets/home-step-img.jpg" width="610px" height="714px" alt="Steps to get started" className='mx-auto w-full' />
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function Home() {
                   <span className="text-sm tracking-[2.5px] uppercase">
                     How do I choose a design style?
                   </span>
-                  <Image src="/assets/arrow-up.svg" width="12px" height="6px" className='' />
+                  <Image src="/assets/arrow-up.svg" width="12px" height="6px" className='' alt="accordion arrow key up" />
                 </div>
                 <div className="py-4">
                   <p className="text-lg tracking-[1.5px] leading-loose">
