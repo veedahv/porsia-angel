@@ -15,18 +15,26 @@ const Header = () => {
 
     return (
         <header className="header relative shadow py-5">
-            <div className="container mx-auto px-4 text-center">
-                <Image src="/assets/logo-dark.png" width="192px" height="19px" alt="Porsia and angel logo" className='mx-auto' />
+            <div className="container xl:max-w-screen-xl mx-auto px-4 text-center">
+                <div className="text-3xl text-center font-title mx-auto">
+                PORSIA & ANGEL
+                    </div>
+                {/* <Image src="/assets/logo-dark.png" width="192px" height="19px" alt="Porsia and angel logo" className='mx-auto' /> */}
                 {/* <Image src='/logo.png' width='91px' height='90px' /> */}
-                <button className="absolute top-0 bottom-0 right-0 bg-primary bg-opacity-70 px-4" onClick={handleClick}>
+                <button className="absolute top-0 bottom-0 right-0 bg-primary bg-opacity-70 px-4 z-40" onClick={handleClick}>
                     <Image src="/assets/menu.png" width="25px" height="23px" alt="hamburger menu icon" className='mx-auto' />
                 </button>
-                {active && <div className="absolute top-full right-0 z-30 bg-white px-8">
+                {active && <div className="fixed top-0 right-0 bottom-0 left-0 z-20" onClick={() => setActive(false)}>
+                {/* {active && <div className="fixed top-0 right-0 bottom-0 left-0 z-30"> */}
+                </div>}
+                {active && <div className="absolute top-full right-0 z-40 bg-white px-8">
                     <nav className="nav w-[250px] min-h-[90vh] flex justify-start items-center text-left">
                         <ul className="">
                             <li className="text-base uppercase tracking-[2.5px] my-8">
                                 <Link href="/">
+                                    <a>
                                     Home
+                                    </a>
                                 </Link>
                             </li>
                             <li className="text-base uppercase tracking-[2.5px] my-8">
@@ -37,13 +45,18 @@ const Header = () => {
                                 </Link> */}
                             </li>
                             <li className="text-base uppercase tracking-[2.5px] my-8">
+                                {/* <Link href="/service" onClick={() => setActive(false)}> */}
                                 <Link href="/service">
+                                <a>
                                     Services
+                                </a>
                                 </Link>
                             </li>
                             <li className="text-base uppercase tracking-[2.5px] my-8">
                                 <Link href="/blog">
+                                <a>
                                     Blog
+                                </a>
                                 </Link>
                             </li>
                             <li className="text-base uppercase tracking-[2.5px] my-8">
@@ -53,7 +66,9 @@ const Header = () => {
                             </li>
                             <li className="text-base uppercase tracking-[2.5px] my-8">
                                 <Link href="/contact">
+                                <a>
                                     Contact
+                                </a>
                                 </Link>
                             </li>
                         </ul>

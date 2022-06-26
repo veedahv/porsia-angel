@@ -1,9 +1,12 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Testimonial from '../components/home/Testimonial'
-// import Footer from '../components/Footer'
-// import Header from '../components/Header'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import AboutSection from '../components/home/AboutSection';
+import FaqSection from '../components/home/FaqSection';
+import HeroSection from '../components/home/HeroSection';
+import PortfolioSection from '../components/home/PortfolioSection';
+import ProcesSection from '../components/home/ProcessSection';
+import ReviewsSection from '../components/home/ReviewsSection';
+import Testimonial from '../components/home/Testimonial';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -14,224 +17,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="">
-        {/* <div className="bg-[url('/assets/home-hero-bg.jpg')] bg-[rgba(21, 21, 21, 0.33)] bg-cover bg-norepeat bg-center  bg-blend-overlay min-h-[90vh] w-full relative"> */}
-        <div className="bg-[url('/assets/home-hero-bg.jpg')] bg-[#151515A1] bg-cover bg-norepeat bg-center bg-blend-overlay min-h-[90vh] w-full relative">
-          {/* <div className="bg-[rgba(21, 21, 21, 0.33)] bg-cover bg-norepeat bg-center  bg-blend-overlay min-h-[90vh] w-full relative"> */}
-          {/* <div className="bg-[#151515A1] bg-cover bg-norepeat bg-center  bg-blend-overlay min-h-[90vh] w-full relative"> */}
-        </div>
-        <div className="my-10 absolute md:relative bottom-[10px] left-0 right-0">
-          <div className="container mx-auto px-4 w-full md:text-center text-white md:text-dark">
-            <h1 className="flex flex-col md:flex-row justify-start md:justify-center gap-5 uppercase text-5xl md:text-5xl lg:text-7xl tracking-[2.5px]">
-              <span className="font-title">
-                insipire.
-              </span>
-              <span className="font-title">
-                Collabrate.
-              </span>
-              <span className="font-title">
-                design
-              </span>
-            </h1>
-          </div>
-        </div>
-        <div className="container mx-auto px-4 w-full text-center my-10">
-          <button className="border border-primary bg-primary w-56 px-1 py-4 text-lg text-white text-center tracking-[2.5px]">
-            GET STARTED
-          </button>
-        </div>
-      </section>
-      <section className="py-10">
-        <div className="container mx-auto px-4">
-          <div className="flex items-stretch">
-            <div className={styles.about + " md:flex-auto md:w-full relative"}></div>
-            <div className="md:flex-auto w-full relative bg-white px-14 py-12">
-              <p className="text-lg tracking-[1px] leading-loose max-w-xs">
-                PORSIA & ANGEL combines creativity and storytelling to your space.
-                We power the visuals by collaborating with your ideas and world class
-                specialists making it possible to bring your dreams to reality without even asking “Is it possible?”
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="">
-        <div className="container mx-auto px-4 py-10">
-          <div className="flex flex-col-reverse lg:flex-row gap-10 lg:gap-16">
-            <div className="flex-auto w-full lg:w-6/12">
-              <div className="flex lg:flex-col gap-x-5 gap-y-10 my-10 overflow-x-auto">
-                <div className="w-[300px] lg:w-full flex-none">
-                  <h2 className="text-3xl font-title tracking-[2.5px]">
-                    Get Started
-                  </h2>
-                  <p className="text-lg tracking-[1.5px] leading-loose">
-                    Share your inspiration and ideas, so we can match you with the perfect designer for your space, style and budget.
-                  </p>
-                </div>
-                <div className="w-[300px] lg:w-full flex-none">
-                  <h2 className="text-3xl font-title tracking-[2.5px]">
-                    Collaborate
-                  </h2>
-                  <p className="text-lg tracking-[1.5px] leading-loose">
-                    Watch your space transformed online and collaborate with your designer sharing your likes and dislikes. Work with a professional till your space is perfect.
-                  </p>
-                </div>
-                <div className="w-[300px] lg:w-full flex-none">
-                  <h2 className="text-3xl font-title tracking-[2.5px]">
-                    Shop & Transform
-                  </h2>
-                  <p className="text-lg tracking-[1.5px] leading-loose">
-                    After you receive your final design,
-                    a shopping list of products can be purchased at an exclusive discount via our trade partnerships.
-                    Begin designing your home with your designer.
-                  </p>
-                </div>
-              </div>
-              <button className="border border-primary bg-primary w-56 px-1 py-4 text-lg text-white text-center tracking-[2.5px] mx-auto lg:mx-0">
-                START NOW
-              </button>
-            </div>
-            <div className="flex-auto w-full lg:w-7/12">
-              <Image src="/assets/home-step-img.jpg" width="610px" height="714px" alt="Steps to get started" className='mx-auto w-full' />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className=" bg-primary text-white relative">
-        <div className={styles.reviews + " bg-primary relative min-h-[300px] md:absolute w-full md:w-3/5 md:top-0 md:right-0 md:bottom-0"}>
-        </div>
-        <div className={styles.reviewGap + " hidden md:block bg-white md:absolute w-full md:w-1/5 md:top-0 md:left-1/2 transform md:-translate-x-1/2 md:bottom-0"}>
-  {/* width: 20%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%); */}
-        </div>
-        {/* <div className={styles.reviews + " bg-primary text-white relative"}> */}
-        <div className=" bg-primary text-white relative">
-          <div className="container px-4 py-5 mx-auto">
-            <div className="flex justify-start items-center min-h-[80vh]">
-              <div className="max-w-lg w-full md:w-1/2">
-                <h1 className="text-3xl font-title my-5">
-                  LET THE NUMBERS SPEAK
-                </h1>
-                <p className="text-lg tracking-[1px] leading-loose my-5">
-                  Whether you are looking for a complete brand improvement,
-                  a transformative space, a breath-taking comfort zone or simply wanting to show- off your imagination,
-                  we will walk you through it step by step… maybe even with our eyes closed.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <section className="bg-[url('/assets/home-hero-bg.jpg')] bg-[#151515A1] bg-blend-overlay bg-cover bg-norepeat bg-center text-white w-full relative">
-        <div className="container mx-auto px-4 py-14">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl text-center font-title tracking-[2.5px] my-4">
-              WHAT OUR CUSTOMERS ARE SAYING
-            </h2>
-            <div className="bg-white text-dark text-center px-14 md:px-20 py-2 w-full">
-              <p className="my-5 text-lg tracking-[1.5px] leading-loose">
-                PORSIA & ANGEL for me, is synonymous of high quality,
-                passion and commitment for interior designs that contributed to our brand’s magic in the region.
-              </p>
-              <small className="text-sm tracking-[2.5px] my-5 block">
-                SONIA GVINEY/
-                <span className="font-bold">APPLE</span>
-              </small>
-            </div>
-            <div className="flex">
-              <button className=""></button>
-            </div>
-          </div>
-        </div>
-      </section> */}
+      <HeroSection />
+      <AboutSection />
+      <ProcesSection />
+      <ReviewsSection />
+      <PortfolioSection />
       <Testimonial />
-      <section className="">
-        <div className="container mx-auto px-4 py-14">
-          <div className="max-w-lg mx-auto">
-            <h2 className="text-3xl font-title text-center tracking-[2.5px]">
-              FAQ
-            </h2>
-            <ul className="my-2">
-              <li className="my-4">
-                <div className="flex gap-1 pr-2 w-fit border-b border-black">
-                  <span className="text-sm tracking-[2.5px] uppercase">
-                    How do I choose a design style?
-                  </span>
-                  <Image src="/assets/arrow-up.svg" width="12px" height="6px" className='' alt="accordion arrow key up" />
-                </div>
-                <div className="py-4">
-                  <p className="text-lg tracking-[1.5px] leading-loose">
-                    Go on Pinterest and pin some designs that you love.
-                    Then try to categorize these designs! That’s what we did before we started.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* <Header /> */}
-
-      {/* <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
-      {/* <Footer /> */}
+      <FaqSection />
     </div>
   )
 }

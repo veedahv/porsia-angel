@@ -17,7 +17,7 @@ export default function Service() {
       <section className={styles.hero + " bg-primary text-white relative"}>
           <div className="container px-4 py-5 mx-auto">
               <div className="flex justify-start items-center min-h-[80vh]">
-                  <div className="max-w-lg">
+                  <div className="max-w-[590px] w-full md:w-1/2">
                       <h1 className="text-7xl font-title my-5">
                       OUR SERVICES
                       </h1>

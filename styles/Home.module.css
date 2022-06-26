@@ -10,6 +10,28 @@
   background: url("/assets/about-bg.jpg") no-repeat center / cover;
 }
 
+.case1::before {
+  content: "";
+  background: #2F1D18;
+  position: absolute;
+  top: -40px;
+  left: -40%;
+  width: 120%;
+  height: 100%;
+  z-index: -1;
+}
+
+.case2::before {
+  content: "";
+  background: #2F1D18;
+  position: absolute;
+  top: 40px;
+  left: 40%;
+  width: 120%;
+  height: 100%;
+  z-index: -1;
+}
+
 /* .reviews::after { */
 .reviews {
   /* content: ""; */
@@ -51,6 +73,22 @@
   z-index: 15;
 }
 
+.faqcheck:checked ~ .faqanswer {
+    max-height: fit-content;
+    margin-top: 20px;
+}
+.faqcheck:checked ~ .faqhead {
+  color: #000000;
+}
+/* .faqhead {
+  background-color: #000000;
+} */
+.faqcheck:checked ~ .faqhead .close {
+  display: none;
+}
+.faqcheck:checked ~ .faqhead .open {
+  display: inline-block;
+}
 
 /* .container {
   padding: 0 2rem;

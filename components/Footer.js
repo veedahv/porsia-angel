@@ -1,5 +1,5 @@
 
- import Link from 'next/link';
+import Link from 'next/link';
 import Image from 'next/image';
 
 
@@ -8,17 +8,23 @@ const Footer = () => {
 
     return (
         <footer className="footer relative bg-primary text-white py-10">
-            <div className="container mx-auto px-4">
+            <div className="container xl:max-w-screen-xl mx-auto px-4">
                 <div className="my-14">
-                    <Image src="/assets/logo-light.svg" alt='Porsia and angel logo' width="478px" height="46px" className='' />
+                    <div className="text-7xl font-title">
+                    PORSIA & ANGEL
+                    </div>
+                    {/* <Image src="/assets/logo-light.svg" alt='Porsia and angel logo' width="478px" height="46px" className='' /> */}
                 </div>
                 <div className="my-14 hidden md:flex gap-5">
                     <a href="" className="border border-white w-56 px-1 py-5 text-lg text-center tracking-[2.5px]">
                         START A PROJECT
-                        </a>
+                    </a>
+                    <a href="" className="border border-white w-56 px-1 py-5 text-lg text-center tracking-[2.5px]">
+                        OUR SERVICES
+                    </a>
                 </div>
                 <div className="max-w-3xl my-10">
-                    <div className="flex flex-wrap justify-between gap-y-5 gap-x-16 w-full">
+                    <div className="flex flex-wrap justify-between gap-y-5 gap-x-14 sm:gap-x-24 w-full">
                         <div className="md:order-1">
                             <h2 className="text-sm uppercase tracking-[2.5px] my-3">
                                 Contact Us:
@@ -27,7 +33,7 @@ const Footer = () => {
                             <a href="tel:+971582674671" className="text-lg tracking-[1.5px] block my-3">+971 58 267 4671</a>
                         </div>
                         <ul className="md:order-3">
-                            <li className="text-sm uppercase tracking-[2.5px] my-3">                               
+                            <li className="text-sm uppercase tracking-[2.5px] my-3">
                                 <Link href="/">
                                     Home
                                 </Link>

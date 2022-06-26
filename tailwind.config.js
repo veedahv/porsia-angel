@@ -42,6 +42,10 @@ module.exports = {
       },
       fontFamily: {
         'title': ['Nooa Semiserif', 'serif']
+      },
+      fontSize: {
+        '3xl': ['1.75rem', '2.25rem'],
+        '7xl': ['4.375rem', '1']
       }
     },
   },
