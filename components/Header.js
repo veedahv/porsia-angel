@@ -10,7 +10,25 @@ const Header = () => {
     const [active, setActive] = useState(false);
 
     const handleClick = () => {
+        active ? 
+        document.removeEventListener('click', checkClick) :
+        document.addEventListener('click', checkClick);
         setActive(!active);
+    }
+    const checkClick = (e) => {
+        // console.log(e.target);
+        if (e.target.classList.contains('navlink')) {
+            // console.log(e);
+            // console.log(e.target);
+            setActive(false);
+            document.removeEventListener('click', checkClick);
+        }
+
+    }
+
+    const closeNav = () => {
+            setActive(false);
+            document.removeEventListener('click', checkClick);
     }
 
     return (
@@ -24,7 +42,8 @@ const Header = () => {
                 <button className="absolute top-0 bottom-0 right-0 bg-primary bg-opacity-70 px-4 z-40" onClick={handleClick}>
                     <Image src="/assets/menu.png" width="25px" height="23px" alt="hamburger menu icon" className='mx-auto' />
                 </button>
-                {active && <div className="fixed top-0 right-0 bottom-0 left-0 z-20" onClick={() => setActive(false)}>
+                {/* {active && <div className="fixed top-0 right-0 bottom-0 left-0 z-20" onClick={() => setActive(false)}> */}
+                {active && <div className="fixed top-0 right-0 bottom-0 left-0 z-20" onClick={() => closeNav()}>
                 {/* {active && <div className="fixed top-0 right-0 bottom-0 left-0 z-30"> */}
                 </div>}
                 {active && <div className="absolute top-full right-0 z-40 bg-white px-8">
@@ -32,7 +51,7 @@ const Header = () => {
                         <ul className="">
                             <li className="text-base uppercase tracking-[2.5px] my-8">
                                 <Link href="/">
-                                    <a>
+                                    <a className='navlink'>
                                     Home
                                     </a>
                                 </Link>
@@ -47,14 +66,14 @@ const Header = () => {
                             <li className="text-base uppercase tracking-[2.5px] my-8">
                                 {/* <Link href="/service" onClick={() => setActive(false)}> */}
                                 <Link href="/service">
-                                <a>
+                                <a className='navlink'>
                                     Services
                                 </a>
                                 </Link>
                             </li>
                             <li className="text-base uppercase tracking-[2.5px] my-8">
                                 <Link href="/blog">
-                                <a>
+                                <a className='navlink'>
                                     Blog
                                 </a>
                                 </Link>
@@ -66,7 +85,7 @@ const Header = () => {
                             </li>
                             <li className="text-base uppercase tracking-[2.5px] my-8">
                                 <Link href="/contact">
-                                <a>
+                                <a className='navlink'>
                                     Contact
                                 </a>
                                 </Link>

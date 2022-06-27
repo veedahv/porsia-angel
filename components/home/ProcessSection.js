@@ -5,8 +5,8 @@ export default function ProcesSection() {
       <section className="">
         <div className="container xl:max-w-screen-xl mx-auto px-4 py-10">
           <div className="flex flex-col-reverse lg:flex-row gap-10 lg:gap-16">
-            <div className="flex-auto w-full lg:w-6/12">
-              <div className="flex lg:flex-col gap-x-5 gap-y-10 my-10 overflow-x-auto">
+            <div className="flex-auto w-full lg:w-6/12 text-center lg:text-left">
+              <div className="flex lg:flex-col gap-x-5 gap-y-10 my-10 overflow-x-auto text-left">
                 <div className="w-[300px] lg:w-full flex-none">
                   <h2 className="text-3xl font-title tracking-[2.5px]">
                     Get Started
@@ -34,7 +34,7 @@ export default function ProcesSection() {
                   </p>
                 </div>
               </div>
-              <button className="border border-primary bg-primary w-56 px-1 py-4 text-lg text-white text-center tracking-[2.5px] mx-auto lg:mx-0">
+              <button className="border border-primary bg-primary w-56 px-1 py-4 text-lg text-white text-center tracking-[2.5px]">
                 START NOW
               </button>
             </div>

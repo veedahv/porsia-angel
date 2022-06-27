@@ -53,14 +53,14 @@ const Testimonial = () => {
         }, 100);
     }
     return (
-        <section className="bg-[url('/assets/home-hero-bg.jpg')] bg-[#151515A1] bg-blend-overlay bg-cover bg-norepeat bg-center text-white w-full relative">
+        <section className="bg-[url('/assets/testimonial-bg.jpg')] bg-[#151515A1] bg-blend-overlay bg-cover bg-norepeat bg-center text-white w-full relative">
             <div className="container xl:max-w-screen-xl mx-auto px-4 py-14">
                 <div className="max-w-3xl mx-auto">
-                    <h2 className="text-3xl text-center font-title tracking-[2.5px] my-4">
+                    <h2 className="text-xl sm:text-3xl text-center font-title tracking-[2.5px] my-4">
                         WHAT OUR CUSTOMERS ARE SAYING
                     </h2>
                     <div className="bg-white flex relative z-10 my-3">
-                        <div className="overlow-hidden relative min-h-[480px] sm:min-h-[360px] xl:min-h-[340px] z-20 flex-auto">
+                        <div className="overlow-hidden relative min-h-[290px] sm:min-h-[250px] xl:min-h-[250px] z-20 flex-auto">
                             <div className={`overflow-hidden relative z-10 w-full h-full flex items-center`}>
                                 {
                                     allTestimonials.map((testimonial, i) => {
@@ -70,11 +70,11 @@ const Testimonial = () => {
                                                 style={{ transform: `translateX(${(i - currentIndex) * 100}%)`, transition: 'all 0.5s' }}
                                                 key={i}
                                             >
-                                                <div className="text-dark text-center px-14 md:px-20 py-2 w-full">
-                                                    <p className="my-5 text-lg tracking-[1.5px] leading-loose">
+                                                <div className="text-dark text-center px-10 sm:px-14 md:px-20 py-2 w-full">
+                                                    <p className="my-5 text-base sm:text-lg tracking-[1.5px] leading-loose">
                                                         {testimonial.testimonial}
                                                     </p>
-                                                    <small className="text-sm tracking-[2.5px] my-5 block">
+                                                    <small className="text-xs sm:text-sm tracking-[2.5px] my-5 block">
                                                         SONIA GVINEY/
                                                         <span className="font-bold">APPLE</span>
                                                         {/* {testimonial.name} */}

@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="footer relative bg-primary text-white py-10">
             <div className="container xl:max-w-screen-xl mx-auto px-4">
                 <div className="my-14">
-                    <div className="text-7xl font-title">
+                    <div className="text-5xl md:text-7xl font-title">
                     PORSIA & ANGEL
                     </div>
                     {/* <Image src="/assets/logo-light.svg" alt='Porsia and angel logo' width="478px" height="46px" className='' /> */}

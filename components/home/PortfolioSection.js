@@ -6,48 +6,50 @@ import styles from '../../styles/Home.module.css';
 
 export default function PortfolioSection() {
     return (
-        <section className="overflow-x-hidden">
+        <section className="my-20">
             <div className="container xl:max-w-screen-xl mx-auto px-4 py-10">
-                <div className="columns-2 gap-10 lg:gap-16">
-                    <div className="">
-                        <div className={styles.case1 + " relative z-10 w-full "}>
-                            {/* <div className={" flex-auto w-full "}> */}
-                            <Image src="/assets/case1.jpg" width="542px" height="375px" alt="Steps to get started" className='mx-auto w-full' />
+                <div className="overflow-x-auto md:overflow-x-visible">
+                {/* <div className="overflow-x-auto"> */}
+                {/* <div className=""> */}
+                    <div className="columns-2 gap-10 lg:gap-24 min-w-[650px] w-full">
+                        <div className="">
+                            <div className={styles.case1 + " relative z-10 w-full "}>
+                                {/* <div className={" flex-auto w-full "}> */}
+                                <Image src="/assets/case1.jpg" width="542px" height="375px" alt="Steps to get started" className='mx-auto w-full' />
+                            </div>
+                            <div className="py-8">
+                                <h2 className="text-3xl font-title tracking-[2.5px] uppercase">
+                                    LITTLE TOWN
+                                </h2>
+                                <p className="text-lg text-dark tracking-[1.5px] leading-loose my-2">
+                                    Alessia Clarke works on this new experience-led home at 7th Avenue of New York, USA.
+                                    She calls it a little town. Read her case study
+                                </p>
+                                <button className="border border-primary w-56 py-4 uppercase text-lg text-primary text-center tracking-[2.5px]">
+                                    Read case study
+                                </button>
+                            </div>
                         </div>
-                        <div className="w-[300px] lg:w-full flex-none">
-                            <h2 className="text-3xl font-title tracking-[2.5px]">
-                                Shop & Transform
-                            </h2>
-                            <p className="text-lg tracking-[1.5px] leading-loose">
-                                After you receive your final design,
-                                a shopping list of products can be purchased at an exclusive discount via our trade partnerships.
-                                Begin designing your home with your designer.
-                            </p>
-                            <button className="border border-primary bg-white w-56 px-1 py-4 text-lg text-primary text-center tracking-[2.5px] mx-auto lg:mx-0">
-                                START NOW
-                            </button>
-                        </div>
-                    </div>
-                    <button className="border border-primary bg-primary w-56 px-1 py-4 text-lg text-white text-center tracking-[2.5px] my-14 mx-auto lg:mx-0">
-                        START NOW
-                    </button>
-                    <div className="">
-                        <div className={styles.case2 + " relative z-10 w-full "}>
-                            {/* <div className={" flex-auto w-full "}> */}
-                            <Image src="/assets/case2.jpg" width="610px" height="714px" alt="Steps to get started" className='mx-auto w-full' />
-                        </div>
-                        <div className="w-[300px] lg:w-full flex-none">
-                            <h2 className="text-3xl font-title tracking-[2.5px]">
-                                Shop & Transform
-                            </h2>
-                            <p className="text-lg tracking-[1.5px] leading-loose">
-                                After you receive your final design,
-                                a shopping list of products can be purchased at an exclusive discount via our trade partnerships.
-                                Begin designing your home with your designer.
-                            </p>
-                            <button className="border border-primary bg-white w-56 px-1 py-4 text-lg text-primary text-center tracking-[2.5px] mx-auto lg:mx-0">
-                                START NOW
-                            </button>
+                        <button className="border border-primary bg-primary w-56 px-1 py-4 text-lg text-white text-center tracking-[2.5px] my-10 lg:my-24 mx-auto lg:mx-0">
+                            START NOW
+                        </button>
+                        <div className="">
+                            <div className={styles.case2 + " relative z-10 w-full md:mb-[40px] flex items-center justify-center h-[212px] md:h-fit overflow-y-hidden md:overflow-visible"}>
+                                {/* <div className={" flex-auto w-full "}> */}
+                                <Image src="/assets/case2.jpg" width="610px" height="714px" alt="Steps to get started" className='mx-auto w-full' />
+                            </div>
+                            <div className="py-8 mb-10">
+                                <h2 className="text-3xl font-title tracking-[2.5px] uppercase">
+                                    REFURNISHED K
+                                </h2>
+                                <p className="text-lg text-dark tracking-[1.5px] leading-loose my-2">
+                                    A full refurnished office of Shopify, bursting with vibrant,
+                                    comfort and high-tech friendly enivornment to boost creativity and team work.
+                                </p>
+                                <button className="border border-primary w-56 py-4 uppercase text-lg text-primary text-center tracking-[2.5px]">
+                                    Read case study
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

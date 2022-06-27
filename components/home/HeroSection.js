@@ -5,7 +5,7 @@ export default function HeroSection() {
         </div>
         <div className="my-10 absolute md:relative bottom-[10px] left-0 right-0">
           <div className="container xl:max-w-screen-xl mx-auto px-4 w-full md:text-center text-white md:text-dark">
-            <h1 className="flex flex-col md:flex-row justify-start md:justify-center gap-5 uppercase text-5xl md:text-5xl lg:text-7xl tracking-[2.5px]">
+            <h1 className="flex flex-col md:flex-row justify-start md:justify-center gap-5 uppercase text-5xl lg:text-7xl tracking-[2.5px]">
               <span className="font-title">
                 insipire.
               </span>
