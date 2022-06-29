@@ -1,6 +1,4 @@
 
-
-
 @media (min-width: 769px) {
     .hero::after {
         content: "";
@@ -10,9 +8,6 @@
         right: 0;
         bottom: 0;
         left: 0;
-        /* clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); */
-        /* clip-path: polygon(65% 0, 100% 0, 100% 100%, 33% 100%); */
         clip-path: polygon(36% 0, 100% 0, 100% 100%, 71% 100%);
     }    
 }
-

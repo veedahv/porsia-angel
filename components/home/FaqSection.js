@@ -2,7 +2,7 @@ import FaqCard from "./FaqCard";
 
 export default function FaqSection() {
   return (
-      <section className="">
+      <section className="" id="faq">
         <div className="container xl:max-w-screen-xl mx-auto px-4 py-14">
           <div className="max-w-lg mx-auto">
             <h2 className="text-3xl font-title text-center tracking-[2.5px]">

@@ -1,19 +1,14 @@
-
 import Link from 'next/link';
 import Image from 'next/image';
 
-
 const Footer = () => {
-
-
     return (
         <footer className="footer relative bg-primary text-white py-10">
             <div className="container xl:max-w-screen-xl mx-auto px-4">
                 <div className="my-14">
                     <div className="text-5xl md:text-7xl font-title">
-                    PORSIA & ANGEL
+                        PORSIA & ANGEL
                     </div>
-                    {/* <Image src="/assets/logo-light.svg" alt='Porsia and angel logo' width="478px" height="46px" className='' /> */}
                 </div>
                 <div className="my-14 hidden md:flex gap-5">
                     <a href="" className="border border-white w-56 px-1 py-5 text-lg text-center tracking-[2.5px]">
@@ -39,11 +34,11 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li className="text-sm uppercase tracking-[2.5px] my-3">
-                                <a href="" className="">
-                                    About
-                                </a>
-                                {/* <Link href="/">
-                                </Link> */}
+                                <Link href="/about">
+                                    <a href="" className="">
+                                        About
+                                    </a>
+                                </Link>
                             </li>
                             <li className="text-sm uppercase tracking-[2.5px] my-3">
                                 <Link href="/service">
@@ -81,9 +76,11 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li className="text-sm uppercase tracking-[2.5px] my-3">
-                                <a href="" className="">
-                                    faq
-                                </a>
+                                <Link href="/#faq">
+                                    <a href="" className="">
+                                        faq
+                                    </a>
+                                </Link>
                             </li>
                             <li className="text-sm uppercase tracking-[2.5px] my-3">
                                 <a href="" className="">
@@ -110,6 +107,5 @@ const Footer = () => {
         </footer>
     )
 }
-
 
 export default Footer;
