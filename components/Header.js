@@ -45,7 +45,7 @@ const Header = () => {
                             </li>
                             <li className="text-base uppercase tracking-[2.5px] my-8">
                                 <Link href="/about">
-                                    <a href="" className="">
+                                    <a className="navlink">
                                         About
                                     </a>
                                 </Link>
@@ -66,7 +66,7 @@ const Header = () => {
                             </li>
                             <li className="text-base uppercase tracking-[2.5px] my-8">
                                 <Link href="/portfolio">
-                                    <a href="" className="">
+                                    <a className="navlink">
                                         PORTFOLIO
                                     </a>
                                 </Link>
