@@ -35,7 +35,7 @@ export default function PortfolioSection() {
                             <div className={styles.case2 + " relative z-10 w-full md:mb-[40px] flex items-center justify-center h-[212px] md:h-fit overflow-y-hidden md:overflow-visible"}>
                                 <Image src="/assets/case2.jpg" width="610px" height="714px" alt="Steps to get started" className='mx-auto w-full' />
                             </div>
-                            <div className="py-8 mb-10 md:mb-0">
+                            <div className="py-8 mb-20 md:mb-0">
                                 <h2 className="text-3xl font-title tracking-[2.5px] uppercase">
                                     REFURNISHED K
                                 </h2>
