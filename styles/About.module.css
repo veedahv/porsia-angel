@@ -1,0 +1,22 @@
+
+.heroImg {
+    background: url('/assets/about-hero-bg.jpg') no-repeat center/cover;
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+    z-index: 10;
+}
+
+@media (min-width: 768px) {
+    .hero::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        /* top: -50px; */
+        top: 0px;
+        width: 40%;
+        /* width: 500px; */
+        height: 100%;
+        background: #2F1D18 ;
+        clip-path: polygon(0 0, 30% 0, 100% 100%, 70% 100%);
+        /* z-index: 1; */
+    }
+}

@@ -5,7 +5,7 @@ import styles from '../../styles/Home.module.css';
 
 export default function PortfolioSection() {
     return (
-        <section className="my-20">
+        <section className="my-20 max-w-full overflow-x-hidden">
             <div className="container xl:max-w-screen-xl mx-auto px-4 py-10">
                 <div className="overflow-x-auto md:overflow-x-visible">
                     <div className="columns-2 gap-10 lg:gap-24 min-w-[650px] w-full">
