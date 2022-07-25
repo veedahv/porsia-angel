@@ -11,10 +11,10 @@ export default function ReviewsSection() {
           <div className="container xl:max-w-screen-xl px-4 py-14 mx-auto">
             <div className="flex justify-start items-center md:my-14">
               <div className="max-w-lg w-full lg:w-2/5">
-                <h1 className="text-3xl font-title my-5">
+                <h1 className="text-lg md:text-3xl font-title my-5">
                   LET THE NUMBERS SPEAK
                 </h1>
-                <p className="text-lg tracking-[1px] leading-loose my-5">
+                <p className="text-sm md:text-lg tracking-[1px] leading-loose my-5">
                   Since 2010, we’ve grown from an outstanding interior agency to a
                   full entreprise filled with professional interior designers.
                   We’ve been trusted to design for hundreds of spaces, from, homes, hotels,
@@ -22,26 +22,26 @@ export default function ReviewsSection() {
                 </p>
                 <div className="flex flex-wrap justify-between gap-5 my-5 text-center">
                   <div className="">
-                    <small className="text-sm tracking-[2.5px] uppercase">
+                    <small className="text-xs md:text-sm tracking-[2.5px] uppercase">
                       Years in business
                     </small>
-                    <p className="text-3xl font-title">
+                    <p className="text-xl md:text-3xl font-title">
                       12
                     </p>
                   </div>
                   <div className="">
-                    <small className="text-sm tracking-[2.5px] uppercase">
+                    <small className="text-xs md:text-sm tracking-[2.5px] uppercase">
                       Designed spaces
                     </small>
-                    <p className="text-3xl font-title">
+                    <p className="text-xl md:text-3xl font-title">
                       100+
                     </p>
                   </div>
                   <div className="">
-                    <small className="text-sm tracking-[2.5px] uppercase">
+                    <small className="text-xs md:text-sm tracking-[2.5px] uppercase">
                       Trusted brands
                     </small>
-                    <p className="text-3xl font-title">
+                    <p className="text-xl md:text-3xl font-title">
                       50+
                     </p>
                   </div>

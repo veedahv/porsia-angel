@@ -54,13 +54,13 @@ const Testimonial = () => {
     }
     return (
         <section className="bg-[url('/assets/testimonial-bg.jpg')] bg-[#151515A1] bg-blend-overlay bg-cover bg-norepeat bg-center text-white w-full relative">
-            <div className="container xl:max-w-screen-xl mx-auto px-4 py-14">
+            <div className="container xl:max-w-screen-xl mx-auto px-4 py-20">
                 <div className="max-w-3xl mx-auto">
                     <h2 className="text-xl sm:text-3xl text-center font-title tracking-[2.5px] my-4">
                         WHAT OUR CUSTOMERS ARE SAYING
                     </h2>
                     <div className="bg-white flex relative z-10 my-3">
-                        <div className="overlow-hidden relative min-h-[290px] sm:min-h-[250px] xl:min-h-[250px] z-20 flex-auto">
+                        <div className="overlow-hidden relative min-h-[290px] sm:min-h-[250px] xl:min-h-[300px] z-20 flex-auto">
                             <div className={`overflow-hidden relative z-10 w-full h-full flex items-center`}>
                                 {
                                     allTestimonials.map((testimonial, i) => {
@@ -88,7 +88,7 @@ const Testimonial = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-center gap-1">
+                    <div className="flex justify-center gap-1 mt-14">
                         {
                             currentIndex > 0 &&
                             <button className="block hover:opacity-80 lg:opacity-100" onClick={prevFunc}>
