@@ -25,7 +25,7 @@ const Header = () => {
     return (
         <header className="header relative shadow py-5">
             <div className="container xl:max-w-screen-xl mx-auto px-4 text-center">
-                <div className="text-3xl text-center font-title mx-auto">
+                <div className="text-2xl md:text-3xl text-left md:text-center font-title mx-auto">
                     PORSIA & ANGEL
                 </div>
                 <button className="absolute top-0 bottom-0 right-0 bg-primary bg-opacity-70 px-4 z-40" onClick={handleClick}>

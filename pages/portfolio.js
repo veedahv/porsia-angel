@@ -7,7 +7,7 @@ export default function Portfolio() {
                 <h1 className="text-5xl md:text-6xl lg:text-7xl text-center font-title mb-10">
                     PORTFOLIO
                 </h1>
-                <div className="grid grid-cols-2 gap-10 lg:gap-24 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-24 w-full">
                     <div className="">
                         <div className={" relative z-10 w-full "}>
                             <Image src="/assets/case1.jpg" width="542px" height="375px" alt="Steps to get started" className='mx-auto w-full' />
