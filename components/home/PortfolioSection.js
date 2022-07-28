@@ -26,11 +26,13 @@ export default function PortfolioSection() {
                                 </button>
                             </div>
                         </div>
+                            <div className="w-fit my-10 lg:my-24 ml-auto lg:mx-0">
                         <Link href="/portfolio">
-                            <button className="border border-primary bg-primary w-56 px-1 py-4 text-base md:text-lg text-white text-center tracking-[2.5px] my-10 lg:my-24 mx-auto lg:mx-0">
+                            <button className="border border-primary bg-primary w-56 px-1 py-4 text-base md:text-lg text-white text-center tracking-[2.5px] my-10 lg:my-24">
                                 VIEW PORTFOLIO
                             </button>
                         </Link>
+                            </div>
                         <div className="">
                             <div className={styles.case2 + " relative z-10 w-full md:mb-[40px] flex items-center justify-center h-[212px] md:h-fit overflow-y-hidden md:overflow-visible"}>
                                 <Image src="/assets/case2.jpg" width="610px" height="714px" alt="Steps to get started" className='mx-auto w-full' />
